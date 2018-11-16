@@ -24,7 +24,7 @@ const embedlulz = new Discord.RichEmbed()
       .setDescription("?uyar <kişi> komutu ile onu uyarabilir ya da ?kick <kişi> veya ?ban <kişi> komutlarını kullanarak onu sunucudan uzaklaştırabilirsin!")
     .addField("Kullanıcının mesajı:", "**" + msg.content + "**")
 
-if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
+if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/) (htpp)/g) && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
     if(msg.member.hasPermission('BAN_MEMBERS')){
     return;
     } else {
