@@ -30,6 +30,6 @@ exports.conf = {
 
 exports.help = {
   name: 'aşçı',
-  description: '',
+  description: 'Yazınızı ascii art Olarak Yazar.',
   usage: 'aşçı'
 };
