@@ -92,10 +92,10 @@ client.on('message', async msg => {
 					let index = 0;
           
 				 msg.channel.sendEmbed(new Discord.RichEmbed()                  
-         .setTitle(Şarkı Seçimi')
+         .setTitle('Şarkı Seçimi')
          .setDescription(`${videos.map(video2 => `**${++index} -** ${video2.title}`).join('\n')}`)
          .setFooter('Lütfen 1-10 Arasında Bir Rakam Seçiniz 10 Saniye İçinde Liste İptal Edilecektir!')
-	 .setFooter('Örnek Kullanım **1**')
+	 .setFooter('Örnek Kullanım 1')
          .setColor('0x36393E'));
           msg.delete(5000)
 					try {
